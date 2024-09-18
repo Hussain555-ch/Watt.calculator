@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Meter Watt Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="underlined-heading">Commercial Meter Watt Calculator</h1>
+        <form id="wattCalculator">
+            <div class="form-group">
+                <label for="ac 1.5 tun">AC 1.5 tun (3500 watts per hour): </label>
+                <input type="number" id="ac 1.5 tun" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="ac 1 tun">AC 1 tun (2500 watts per hour): </label>
+                <input type="number" id="ac 1 tun" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="ledLight">LED Light (10 watts per hour): </label>
+                <input type="number" id="ledLight" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="machinery">Machinery (2000 watts per hour): </label>
+                <input type="number" id="machinery" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="freezer">Freezer (3000 watts per hour): </label>
+                <input type="number" id="freezer" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="bulbs">Bulbs (100 watts per hour): </label>
+                <input type="number" id="bulbs" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="cameraLed">Camera LED (100 watts per hour): </label>
+                <input type="number" id="cameraLed" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="airConditionFan">Air Condition Fan (150 watts per hour): </label>
+                <input type="number" id="airConditionFan" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="parkingLights">Parking Lights (200 watts per hour): </label>
+                <input type="number" id="parkingLights" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="LED display Board">LED display Board (400 watts per hour): </label>
+                <input type="number" id="LED display Board" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="water pump">water pump (1000 watts per hour): </label>
+                <input type="number" id="water pump" value="0" min="0">
+            </div>
+            <button type="button" onclick="calculateWattage()">Calculate Total Watts</button>
+        </form>
+        <div id="result">
+            <h2>Total Power Consumption: <span id="totalWatts">0</span> watts</h2>
+        </div>
+    </div>
+    <footer>
+        <h1>@Email:</h1>
+        <p>
+            💌1.zainch@gmail.com <br>
+            💌2.zain12@yahoo.com</p>
+        <h2>Address:</h2> <br>
+        <p>
+            ➤E11/1 sector Islamabad <br>
+            ➤office No.5
+        </p>
+        <h3>contact:</h3>
+        <p>📞.03000000000 <br>
+           📞.03000000000
+        </p>
+            <img src="/img/solar system.webp" alt="">
+    </footer>
+</body>
+</html>

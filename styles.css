@@ -1,0 +1,136 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: 100px;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 30px 50px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.container h1{
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    border-bottom: 3px
+    }
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form-group label {
+    width: 70%;
+    margin-right: 10px;
+    font-weight: bold;
+    display: black;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    display: inline-block;
+}
+.form-group input {
+    width: 30%;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 7px;
+    font-size: 16px;
+    display: inline block;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#totalWatts {
+    color: red;
+    font-weight: bold;
+    width: 30px;
+    text-align: right;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 7px;
+    font-size: 16px;
+}
+footer {
+background-color: black;     
+color: white;                
+padding: 20px;               
+display: flex;               
+justify-content: space-between; 
+align-items: center;        
+}
+
+footer h1, footer h2, footer h3 {
+margin: 0 20px;             
+}
+
+footer h1 {
+flex: 1;                     
+text-align: left;
+color: blue;
+font-size: 30px;
+font-weight: bold;
+}
+
+footer h2 {
+flex: 1;                    
+text-align: center;
+color: blue;
+font-weight: bold;
+font-size: 30px;
+}
+
+footer h3 {
+flex: 1;                    
+text-align: right;
+color: blue;
+font-weight: bold;
+font-size: 30px;
+}
+
+footer img {
+flex: 1;                     
+max-width: 150px;            
+height: auto;                
+display: block;              
+margin-left: 20px;          
+}
+
+footer p {
+margin: 5px 0;               
+font-size: 16px;             
+color: white;
+}
+
+
