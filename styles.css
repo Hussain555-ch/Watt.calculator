@@ -85,7 +85,7 @@ button:hover {
 footer {
 background-color: black;     
 color: white;                
-padding: 20px;               
+padding: 50px;               
 display: flex;               
 justify-content: space-between; 
 align-items: center;        
