@@ -137,6 +137,7 @@ color: white;
 @media only screen and (max-width: 480px) {
     .container {
         padding: 10px;
+        width: 80%;
     }
 
     h1 {
@@ -145,5 +146,9 @@ color: white;
 
     p {
         font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
