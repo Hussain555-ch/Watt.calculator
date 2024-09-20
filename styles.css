@@ -21,10 +21,14 @@
     margin-right: auto;
 }
 .container h1{
+    text-shadow: 2px 2px red;
     text-align: center;
-    color: blue;
+    color: black;
     text-decoration: underline;
-    border-bottom: 3px
+    border-bottom: 3px;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,0.958420868347339) 2%, rgba(101,253,29,1) 50%,
+ rgba(252,176,69,0.8379726890756303) 100%);
     }
 .form-group {
     display: flex;
@@ -78,8 +82,6 @@ button:hover {
     width: 30px;
     text-align: right;
     padding: 20px;
-    border: 2px solid green;
-    border-radius: 7px;
     font-size: 16px;
 }
 footer {

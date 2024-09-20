@@ -6,7 +6,7 @@ function calculateWattage() {
     const freezer = parseFloat(document.getElementById("freezer").value) * 3000;
     const bulbs = parseFloat(document.getElementById("bulbs").value) * 100;
     const cameraLed = parseFloat(document.getElementById("cameraLed").value) * 100;
-    const airConditionFan = parseFloat(document.getElementById("airConditionFan").value) * 150;
+    const fan = parseFloat(document.getElementById("fan").value) * 150;
     const parkingLights = parseFloat(document.getElementById("parkingLights").value) * 200;
     const ledDisplayBoard = parseFloat(document.getElementById("LED display Board").value) * 400;
     const waterPump = parseFloat(document.getElementById("water pump").value) * 1000;
