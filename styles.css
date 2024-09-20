@@ -85,7 +85,7 @@ button:hover {
     font-size: 16px;
 }
 footer {
-background-color: black;     
+background-image: url('/img/footer\ img\ bacground.jpg');
 color: white;                
 padding: 50px;               
 display: flex;               
@@ -100,7 +100,7 @@ margin: 0 20px;
 footer h1 {
 flex: 1;                     
 text-align: left;
-color: blue;
+color: red;
 font-size: 30px;
 font-weight: bold;
 }
@@ -108,7 +108,7 @@ font-weight: bold;
 footer h2 {
 flex: 1;                    
 text-align: center;
-color: blue;
+color: red;
 font-weight: bold;
 font-size: 30px;
 }
@@ -116,7 +116,7 @@ font-size: 30px;
 footer h3 {
 flex: 1;                    
 text-align: right;
-color: blue;
+color: red;
 font-weight: bold;
 font-size: 30px;
 }
