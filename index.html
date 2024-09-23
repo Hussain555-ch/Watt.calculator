@@ -1,116 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Meter Watt Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="code.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Meter Watt Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="code.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <h1>Solar Watt Calculator</h1>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar scroll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="container">
-        <form id="wattCalculator">
-            <div class="form-group">
-                <label for="ac1_5tun">AC 1.5 tun (3500 watts per hour): </label>
-                <input type="number" id="ac1_5tun" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="ac1tun">AC 1 tun (2500 watts per hour): </label>
-                <input type="number" id="ac1tun" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="ledLight">LED Light (10 watts per hour): </label>
-                <input type="number" id="ledLight" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="chiller">Chiller (2000 watts per hour): </label>
-                <input type="number" id="chiller" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="freezer">Freezer (3000 watts per hour): </label>
-                <input type="number" id="freezer" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="bulbs">Bulbs (100 watts per hour): </label>
-                <input type="number" id="bulbs" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="cameraLed">Camera LED (100 watts per hour): </label>
-                <input type="number" id="cameraLed" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="fan">Fan (150 watts per hour): </label>
-                <input type="number" id="fan" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="chestFreezer">Chest Freezer (200 watts per hour): </label>
-                <input type="number" id="chestFreezer" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="signBoard">Sign Board (400 watts per hour): </label>
-                <input type="number" id="signBoard" value="0" min="0">
-            </div>
-            <div class="form-group">
-                <label for="hoursUsed">Hours Used Per Day: </label>
-                <input type="number" id="hoursUsed" value="0" min="0">
-            </div>
-            <button type="button" onclick="calculateWattage()">Calculate Total Watts</button>
-        </form>
-        <div id="result">
-            <h2>Total Power Consumption: <span id="totalWatts">0</span> watts</h2>
-            <h2>Total Energy Consumption: <span id="totalKWh">0</span> kWh</h2>
-        </div>
+  <div class="container">
+    <form id="wattCalculator">
+      <div class="form-group">
+        <label for="ac1_5tun">AC 1.5 tun (3500 watts per hour): </label>
+        <input type="number" id="ac1_5tun" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="ac1tun">AC 1 tun (2500 watts per hour): </label>
+        <input type="number" id="ac1tun" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="ledLight">LED Light (10 watts per hour): </label>
+        <input type="number" id="ledLight" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="chiller">Chiller (2000 watts per hour): </label>
+        <input type="number" id="chiller" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="freezer">Freezer (3000 watts per hour): </label>
+        <input type="number" id="freezer" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="bulbs">Bulbs (100 watts per hour): </label>
+        <input type="number" id="bulbs" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="cameraLed">Camera LED (100 watts per hour): </label>
+        <input type="number" id="cameraLed" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="fan">Fan (150 watts per hour): </label>
+        <input type="number" id="fan" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="chestFreezer">Chest Freezer (200 watts per hour): </label>
+        <input type="number" id="chestFreezer" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="signBoard">Sign Board (400 watts per hour): </label>
+        <input type="number" id="signBoard" value="0" min="0">
+      </div>
+      <div class="form-group">
+        <label for="hoursUsed">Hours Used Per Day: </label>
+        <input type="number" id="hoursUsed" value="0" min="0">
+      </div>
+      <button type="button" onclick="calculateWattage()">Calculate Total Watts</button>
+    </form>
+    <div id="result">
+      <h2>Total Power Consumption: <span id="totalWatts">0</span> watts</h2>
+      <h2>Total Energy Consumption: <span id="totalKWh">0</span> kWh</h2>
     </div>
-    <footer>
-        <h4>@Email:</h4>
-        <p>
-            💌1.zainch@gmail.com <br>
-            💌2.zain12@yahoo.com</p>
-        <h2>Address:</h2> <br>
-        <p>
-            ➤E11/1 sector Islamabad <br>
-            ➤office No.5
-        </p>
-        <h3>contact:</h3>
-        <p>📞.03000000000 <br>
-           📞.03000000000
-        </p>
-    </footer>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </div>
+  <footer>
+    <h4>@Email:</h4>
+    <p>
+      💌1.zainch@gmail.com <br>
+      💌2.zain12@yahoo.com</p>
+    <h2>Address:</h2> <br>
+    <p>
+      ➤E11/1 sector Islamabad <br>
+      ➤office No.5
+    </p>
+    <h3>contact:</h3>
+    <p>📞.03000000000 <br>
+      📞.03000000000
+    </p>
+  </footer>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
