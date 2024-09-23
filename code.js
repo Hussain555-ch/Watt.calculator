@@ -1,19 +1,22 @@
 function calculateWattage() {
-    const ac1_5Tun = parseFloat(document.getElementById("ac 1.5 tun").value) * 3500 || 0;
-    const ac1Tun = parseFloat(document.getElementById("ac 1 tun").value) * 2500 || 0;
-    const ledLight = parseFloat(document.getElementById("ledLight").value) * 10 || 0;
-    const machinery = parseFloat(document.getElementById("machinery").value) * 2000 || 0;
-    const freezer = parseFloat(document.getElementById("freezer").value) * 3000 || 0;
-    const bulbs = parseFloat(document.getElementById("bulbs").value) * 100 || 0;
-    const cameraLed = parseFloat(document.getElementById("cameraLed").value) * 100 || 0;
-    const fan = parseFloat(document.getElementById("fan").value) * 150 || 0;
-    const chestFreezer = parseFloat(document.getElementById("chest freezer").value) * 2500 || 0;
-    const ledDisplayBoard = parseFloat(document.getElementById("LED display Board").value) * 400 || 0;
-    const waterPump = parseFloat(document.getElementById("water pump").value) * 1000 || 0;
+    const ac1_5tun = document.getElementById('ac1_5tun').value * 3500;
+    const ac1tun = document.getElementById('ac1tun').value * 2500;
+    const ledLight = document.getElementById('ledLight').value * 10;
+    const chiller = document.getElementById('chiller').value * 2000;
+    const freezer = document.getElementById('freezer').value * 3000;
+    const bulbs = document.getElementById('bulbs').value * 100;
+    const cameraLed = document.getElementById('cameraLed').value * 100;
+    const fan = document.getElementById('fan').value * 150;
+    const chestFreezer = document.getElementById('chestFreezer').value * 200;
+    const signBoard = document.getElementById('signBoard').value * 400;
 
-    const totalWatts = ac1_5Tun + ac1Tun + ledLight + machinery + freezer + bulbs + cameraLed + fan + chestFreezer + ledDisplayBoard + waterPump;
+    const totalWatts = ac1_5tun + ac1tun + ledLight + chiller + freezer + bulbs + cameraLed + fan + chestFreezer + signBoard;
 
-    const totalKilowattHours = totalWatts / 1000;
+    const hoursUsed = document.getElementById('hoursUsed').value;
 
-    document.getElementById("totalWatts").innerText = totalKilowattHours.toFixed(2) + " kWh";
+    const totalKWh = (totalWatts / 1000) * hoursUsed;
+
+    // Display results
+    document.getElementById('totalWatts').innerText = totalWatts.toFixed(2);
+    document.getElementById('totalKWh').innerText = totalKWh.toFixed(2);
 }
