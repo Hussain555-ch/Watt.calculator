@@ -12,7 +12,7 @@ function calculateWattage() {
     const ledDisplayBoard = document.getElementById('LED display Board').value;
     const waterPump = document.getElementById('water pump').value;
 
-    // Convert all the input values to integers
+    
     const totalWatts = 
         (ac15tun * 3500) +
         (ac1tun * 2500) +
