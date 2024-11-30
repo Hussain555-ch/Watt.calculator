@@ -14,38 +14,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="shortcut icon" type="x-icon" href="/img/watt calculator icon.png">
-<style>
-  .input-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        input {
-            width: 60px;
-            padding: 5px;
-            margin: 0 5px;
-}
-</style>
-<script>
-  function updateChart() {
-            const value1 = parseInt(document.getElementById('value1').value) || 0;
-            const value2 = parseInt(document.getElementById('value2').value) || 0;
-            const value3 = parseInt(document.getElementById('value3').value) || 0;
-            const value4 = parseInt(document.getElementById('value4').value) || 0;
-            const value5 = parseInt(document.getElementById('value5').value) || 0;
-  }
-</script>
 </head>
 
 <body>
-  <div class="input-container">
-    <input type="number" id="value1" placeholder="value1"/>
-    <input type="number" id="value2" placeholder="value2"/>
-    <input type="number" id="value3" placeholder="value3"/>
-    <input type="number" id="value4" placeholder="value4"/>
-    <input type="number" id="value5" placeholder="value5"/>
-    <button onclick="updateChart()">Update Chart</button>
-  </div>
   <h1>Solar Watt Calculator</h1>
   <div class="container">
     <form id="wattCalculator">
