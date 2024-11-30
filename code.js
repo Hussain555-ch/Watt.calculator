@@ -1,3 +1,8 @@
+// TODO: Manually input Watt power through text input
+// TODO: List of appliances should be retrieved from JavaScript rather than hardcoded in HTML
+// TODO: User can add new appliances in the given list and can remove them
+// TODO: Browser can remember the list of appliances and their values and should display in next time when application is loaded
+
 function calculateWattage() {
     const ac1_5tun = document.getElementById('ac1_5tun').value * 3500;
     const ac1tun = document.getElementById('ac1tun').value * 2500;
